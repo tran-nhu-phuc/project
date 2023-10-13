@@ -1,0 +1,400 @@
+/* phần khởi đầu khi css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #E4E8F0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+/* phần header */
+.header {
+    background-color: #045694;
+    padding: 15px 30px;
+}
+
+.header-logo,
+.header-nav {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header-logo img {
+    width: 70px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.header-logo i,
+.header-nav ul li {
+    color: #fff;
+}
+
+.header-logo i {
+    padding: 8px 9px;
+    background-color: #296fa4;
+    border-radius: 50%;
+}
+
+.header-nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-weight: 300;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.header-nav ul li:hover {
+    opacity: 1;
+}
+/* nội dung */
+.banner {
+    padding-left: 30px;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://digitalhub.fifa.com/transform/2ad3545c-140f-436c-afe8-dd066f63719c/Enzo-Fernandez-Argentina?io=transform:fill,height:1024,width:1920&quality=75");
+}
+
+.banner-group {
+    padding-top: 450px;
+    color: #fff;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 1);
+}
+
+.banner-desc {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.banner-group h3 {
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+/* banner */
+/* nộ dung2 */
+
+.tournaments {
+    text-align: center;
+    padding: 50px 30px;
+    background-color: #045694;
+}
+
+.tournaments-element {
+    text-align: left;
+    width: 20%;
+    display: inline-block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+/* K phải là phần tử con cuối cùng thì nhận CSS */
+.tournaments-element:not(:last-child) {
+    margin-right: 40px;
+}
+
+figcaption {
+    color: #fff;
+}
+
+.tournaments-element img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.tournaments-element:hover,
+.tournaments-element img {
+    transform: scale(1.05);
+}
+/* nội dung 3 */
+.store{
+    background-image: url("./FPLS_FIFAStore_Banner_01.webp");
+    background-size: cover;
+    height: 900px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+}
+.store-image{
+    padding-top: 500px;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 20px;
+    line-height: 1.5;
+}
+.store-image .p{
+    font-size: 45px;
+    text-shadow: 15px 15px 15px white;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.store-image button{
+    width: 130px;
+    height: 50px;
+    margin-top: 30px;
+    border:3px solid white;
+    border-radius: 50px;
+    background-color: rgb(2,90,101);
+    color: #fff;
+    text-shadow: 10px 10px 10px white;
+    margin-left: 145px;
+    font-size: 15px;
+ }
+ .store-image button:hover{
+    text-shadow: 10px 10px 10px white;
+    transform: scale(1.05);
+ }
+ /* nội dung 4 */
+ .shop{
+    padding: 35px;
+ }
+ .shop figure {
+     display: inline-block;
+     width: 15.5%;
+     text-align: left;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     padding: 20px;
+     margin-left: 10px;
+     transition: 0.5s;
+ }
+
+ .shop figure img {
+     width: 100%;
+     border-radius: 10px;
+ }
+
+ .shop figure figcaption {
+     margin-top: 15px;
+     color: #333;
+     display: -webkit-box;
+     line-height: 1;
+     -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+ .shop figure:hover{
+    transform: scale(1.15)
+ }
+ /* nội dung 5 */
+ .store-2 {
+     background-image: url("FIFAPLUS_Tournaments_ORIGINALS_1920x747.webp");
+     background-size: cover;
+     height: 900px;
+     background-repeat: no-repeat;
+     width: 100%;
+     background-position: center;
+ }
+
+ .store-image-2 {
+     padding-top: 500px;
+     color: #fff;
+     font-size: 15px;
+     margin-left: 20px;
+     line-height: 1.5;
+ }
+
+ .store-image-2 .p-2 {
+     font-size: 45px;
+     text-shadow: 15px 15px 15px white;
+     margin-bottom: 30px;
+     font-weight: bold;
+ }
+
+ .store-image-2 button {
+     width: 130px;
+     height: 50px;
+     margin-top: 30px;
+     border: 1px solid white;
+     border-radius: 50px;
+     background-color: rgb(163, 173, 6);
+     color: #fff;
+     text-shadow: 10px 10px 10px white;
+     margin-left: 145px;
+ }
+
+ .store-image-2 button:hover {
+     text-shadow: 10px 10px 10px white;
+     transform: scale(1.05);
+ }
+ /* nội dung 6 */
+ .playJoin .playJoin-item{
+    background-image: url("FIFAPLS_SE_G_S00E00_Academies_Series_Portrait_01.webp");
+    width: 23%;
+    height: 400px;
+ }
+ .playJoin .playJoin-item-1 {
+     background-image: url("cc8b9f62-3ca0-4839-94a3-bab1debb53d6.webp");
+     width: 23%;
+     height: 400px;
+ }
+ .playJoin .playJoin-item-2{
+    background-image:url("FIFAPLS_SE_B_S01E00_AsiaStories_Main_Portrait_01.webp") ;
+    width: 23%;
+    height: 400px;
+ }
+ .playJoin .playJoin-item-3 {
+     background-image: url("MV5BMzY3YTY1YmYtMGNkMC00NTZmLWEzYzQtMzZiNzIzODE2MDU4XkEyXkFqcGdeQXVyMTAxNzkxNDAx._V1_FMjpg_UX1000_.jpg");
+     width: 23%;
+     height: 400px;
+ }
+ .playJoin div{
+    display: inline-block;
+    margin: 2px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px ;
+    cursor: pointer;
+    overflow: hidden;
+ }
+ .playJoin{
+    margin-top: 20px;
+ }
+ .p-3,.p-4,.p-5,.p-6{
+    color: white;
+    background-color: rgb(284, 177,177,0.5);
+    transform: translateY(210px);
+    transition: 0.9s;
+    height: 30px;
+    font-size: 24px;
+ }
+ .p-3:hover,.p-4:hover,.p-5:hover,.p-6:hover{
+    transform: translateY(160px);
+ }
+ .playJoin-item:not(:last-child),
+ .playJoin-item-1:not(:last-child),
+ .playJoin-item-2:not(:last-child),
+ .playJoin-item-3:not(:last-child){
+    margin-right: 10px;
+ }
+ .playJoin{
+    padding-left: 70px;
+ }
+ /* .playJoin-item-1:hover,.playJoin-item-2:hover,.playJoin-item-3:hover,.playJoin-item:hover{
+    transform: scale(1.1);
+ } */
+ /* .store-2 {
+     background-image: url("FIFAPLUS_Tournaments_ORIGINALS_1920x747.webp");
+     background-size: cover;
+     height: 900px;
+     background-repeat: no-repeat;
+     width: 100%;
+     background-position: center;
+ }
+
+ .store-image-2 {
+     padding-top: 500px;
+     color: #fff;
+     font-size: 15px;
+     margin-left: 20px;
+     line-height: 1.5;
+ }
+
+ .store-image-2 .p-2 {
+     font-size: 45px;
+     text-shadow: 15px 15px 15px white;
+     margin-bottom: 30px;
+     font-weight: bold;
+ }
+
+ .store-image-2 button {
+     width: 130px;
+     height: 50px;
+     margin-top: 30px;
+     border: 1px solid white;
+     border-radius: 50px;
+     background-color: rgb(163, 173, 6);
+     color: #fff;
+     text-shadow: 10px 10px 10px white;
+     margin-left: 145px;
+ }
+
+ .store-image-2 button:hover {
+     text-shadow: 10px 10px 10px white;
+     transform: scale(1.05);
+ }
+/* phần 7 */
+.footer{
+    background-color: rgb(2, 15, 42);
+    padding: 20px 0;
+    color: #fff;
+}
+.top-footer{
+    padding-left: 40px;
+}
+.top-footer img,div{
+    display: inline-block;
+}
+.foot-div-1{
+    margin-left: 20%;
+    margin-right:120px;
+}
+.foot-div-1 ul li{
+    display: inline-block;
+    font-size: 25px;
+    padding-right: 15px;
+}
+.footer-img .footer-img-a,p,.footer-img-b{
+    display: inline-block;
+}
+.top-footer p{
+    margin-left: 30px;
+}
+.footer-img{
+    margin-left: 200px;
+}
+hr{
+    border-top: 1px solid lightskyblue;
+    margin-top: 10px;
+}
+.bottom-footer{
+    width: 100%;
+    display: flex;
+    padding-left:15px ;
+}
+.bottom-footer .bottom-footer-div-h{
+    flex: 75%;
+}
+.bottom-footer .bottom-footer-div-2{
+    flex: 25%;
+}
+.bottom-footer-div-h ul li {
+    display: inline-block;
+    padding: 30px;
+   
+}
+
+.bottom-footer-div-h ul li a {
+     color: #fff;
+}
+.bottom-footer-div-2 p{
+    padding: 30px;
+}
